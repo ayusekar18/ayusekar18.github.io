@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+    background-color: #1abc9c;
+  }
+  
+  h1 {
+    text-align: center;
+    /*ketebalan font*/
+    font-weight: 300;
+  }
+
+  table{
+    width: 400px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #d2f6fa;
+}
+
+table,th,tr{
+    border: 1px solid black;
+}
+input,textarea{
+    width: 100%;
+}
+    
+input[type="submit"]{
+    background-color: #63df78;
+}

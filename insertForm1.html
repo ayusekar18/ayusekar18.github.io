@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="styleForm.css"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Menyisipkan Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- Menyisipkan Javascript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            body {
+            background-color: #1abc9c
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a class="navbar-brand" href="index.php">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="sessionLoginForm1.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sessionLogout1.php">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="insertForm1">
+                <h1>Formulir Pendaftaran</h1>
+        </div>
+        <table>
+            <form action="insertProses1.php" method="get">
+                <tr>
+                    <td>Nim</td>
+                    <td colspan="4"><input type="text" name="nim"></td>
+                </tr>
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td colspan="4"><input type="text" name="nama"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin  </td>
+                    <td>
+                        <select name="jeniskelamin">
+                            <option value="Laki-laki">LAKI-LAKI</option>
+                            <option value="Perempuan">Perempuan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tempat Lahir</td>
+                    <td><input type="text" name="tempatlahir"></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td><input type="Date" name="tanggallahir"></td>
+                </tr>
+                <tr>
+                    <td>Alamat </td>
+                    <td colspan="4"><textarea name="alamat"cols="30" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td>KOTA</td>
+                    <td><select name="kota">
+                        <option>******SELECT KOTA******</option>
+                        <option>Ambon</option>
+                        <option>Balikpapan</option>
+                        <option>Bandung</option>
+                        <option>Banten</option>
+                        <option>Batu</option>
+                        <option>Bekasi</option>
+                        <option>Binjai</option>
+                        <option>Blitar</option>
+                        <option>Bogor</option>
+                        <option>Cimahi</option>
+                        <option>Cikarang</option>
+                        <option>Denpasar</option>
+                        <option>Depok</option>
+                        <option>Kediri</option>
+                        <option>Madiun</option>
+                        <option>Malang</option>
+                        <option>Mojokerto</option>
+                        <option>Pasuruan</option>
+                        <option>Tangerang</option>
+        
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td colspan="4"><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td colspan="4"><input type="text" name="password"></td>
+                </tr>
+                <tr>
+                    <td>AGAMA</td>
+                    <td><select name="agama">
+                        <option>*****SELECT AGAMA*****</option>
+                        <option>Islam</option>
+                        <option>Kristen</option>
+                        <option>Katolik</option>
+                        <option>Buddha</option>
+                        <option>Hindu</option>
+                        <option>Konghucu</option>
+        
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><input type="submit" name="Simpan"/>
+                </tr>
+            </form>
+        </table>
+    </body>
+</html>
